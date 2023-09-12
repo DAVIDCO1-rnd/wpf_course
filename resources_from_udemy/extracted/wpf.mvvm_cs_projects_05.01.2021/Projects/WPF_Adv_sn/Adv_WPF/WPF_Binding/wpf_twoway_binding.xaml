@@ -1,0 +1,19 @@
+﻿<Window x:Class="Adv_WPF.WPF_Binding.wpf_twoway_binding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.WPF_Binding"
+        mc:Ignorable="d"
+        Title="wpf_twoway_binding" Height="294.9" Width="453.758">
+    <Grid>
+        <Slider x:Name="my_slider" HorizontalAlignment="Left" Margin="22,24,0,0" VerticalAlignment="Top" 
+                Width="211" Maximum="100" TickPlacement="TopLeft" TickFrequency="5" Value="50"/>
+        <TextBox x:Name="my_tbox" HorizontalAlignment="Left" Height="23" 
+            Margin="238,27,0,0" TextWrapping="Wrap" 
+            Text="{Binding Value, ElementName=my_slider, Mode=TwoWay, NotifyOnTargetUpdated=True, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="56" SourceUpdated="my_tbox_SourceUpdated" TargetUpdated="my_tbox_TargetUpdated"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="238,74,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="update_butt" Content="Update" HorizontalAlignment="Left" Margin="323,27,0,0" VerticalAlignment="Top" Width="75" Click="update_butt_Click"/>
+
+    </Grid>
+</Window>

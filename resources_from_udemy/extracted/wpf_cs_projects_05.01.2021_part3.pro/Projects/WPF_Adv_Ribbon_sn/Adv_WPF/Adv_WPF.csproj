@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02DA4707-36B8-458C-BCEF-C487DFDBCD01}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Adv_WPF</RootNamespace>
+    <AssemblyName>Adv_WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="system.windows.controls.ribbon" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="2nd_ctls\wpf_border.xaml.cs">
+      <DependentUpon>wpf_border.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_checkbox.xaml.cs">
+      <DependentUpon>wpf_checkbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_groupbox.xaml.cs">
+      <DependentUpon>wpf_groupbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_all_ctls.xaml.cs">
+      <DependentUpon>wpf_all_ctls.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_password_tbox.xaml.cs">
+      <DependentUpon>wpf_password_tbox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_progress_bar.xaml.cs">
+      <DependentUpon>wpf_progress_bar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_radio_button.xaml.cs">
+      <DependentUpon>wpf_radio_button.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="2nd_ctls\wpf_slider.xaml.cs">
+      <DependentUpon>wpf_slider.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContextMenu\wpf_contextmenu.xaml.cs">
+      <DependentUpon>wpf_contextmenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="file_folder\io_file_info.xaml.cs">
+      <DependentUpon>io_file_info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="file_folder\io_file_folder.xaml.cs">
+      <DependentUpon>io_file_folder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="file_folder\io_folder_info.xaml.cs">
+      <DependentUpon>io_folder_info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="file_folder\io_main_window.xaml.cs">
+      <DependentUpon>io_main_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\wpf_canvas_panel.xaml.cs">
+      <DependentUpon>wpf_canvas_panel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\wpf_dock_panel.xaml.cs">
+      <DependentUpon>wpf_dock_panel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\wpf_panels_main_window.xaml.cs">
+      <DependentUpon>wpf_panels_main_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\wpf_panels_window_list.xaml.cs">
+      <DependentUpon>wpf_panels_window_list.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\wpf_stack_panel.xaml.cs">
+      <DependentUpon>wpf_stack_panel.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Panels\wpf_wrap_panel.xaml.cs">
+      <DependentUpon>wpf_wrap_panel.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resource\second_win.xaml.cs">
+      <DependentUpon>second_win.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Events\wpf_events.xaml.cs">
+      <DependentUpon>wpf_events.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar_Ribbon\wpf_ribbon.xaml.cs">
+      <DependentUpon>wpf_ribbon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar_Ribbon\wpf_StatusBar.xaml.cs">
+      <DependentUpon>wpf_StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar_Ribbon\wpf_tab_control.xaml.cs">
+      <DependentUpon>wpf_tab_control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar_Ribbon\wpf_toolbar.xaml.cs">
+      <DependentUpon>wpf_toolbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Toolbar_Ribbon\wpf_toolbar_tray.xaml.cs">
+      <DependentUpon>wpf_toolbar_tray.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_binding_main.xaml.cs">
+      <DependentUpon>wpf_binding_main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_binding_project.xaml.cs">
+      <DependentUpon>wpf_binding_project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_oneway_2_source_binding.xaml.cs">
+      <DependentUpon>wpf_oneway_2_source_binding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_oneway_binding.xaml.cs">
+      <DependentUpon>wpf_oneway_binding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_string_format.xaml.cs">
+      <DependentUpon>wpf_string_format.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPF_Binding\wpf_twoway_binding.xaml.cs">
+      <DependentUpon>wpf_twoway_binding.xaml</DependentUpon>
+    </Compile>
+    <Page Include="2nd_ctls\wpf_border.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_checkbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_groupbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_all_ctls.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_password_tbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_progress_bar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_radio_button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="2nd_ctls\wpf_slider.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ContextMenu\wpf_contextmenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="file_folder\io_file_info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="file_folder\io_file_folder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="file_folder\io_folder_info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="file_folder\io_main_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\wpf_canvas_panel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\wpf_dock_panel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\wpf_panels_main_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\wpf_panels_window_list.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\wpf_stack_panel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Panels\wpf_wrap_panel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Resource\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resource\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resource\second_win.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Events\wpf_events.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar_Ribbon\wpf_ribbon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar_Ribbon\wpf_StatusBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar_Ribbon\wpf_tab_control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar_Ribbon\wpf_toolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Toolbar_Ribbon\wpf_toolbar_tray.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_binding_main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_binding_project.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_oneway_2_source_binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_oneway_binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_string_format.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPF_Binding\wpf_twoway_binding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WPF_Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2nd_ctls\Images\edit_32.png" />
+    <Resource Include="2nd_ctls\Images\file_32.png" />
+    <Resource Include="2nd_ctls\Images\format_32.png" />
+    <Resource Include="2nd_ctls\Images\help_32.png" />
+    <Resource Include="2nd_ctls\Images\view_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2nd_ctls\Images\female_user.png" />
+    <Resource Include="2nd_ctls\Images\male_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WPF_Binding\Images\koala_resized.jpg" />
+    <Resource Include="WPF_Binding\Images\me.jpg" />
+    <Resource Include="WPF_Binding\Images\mm.jpg" />
+    <Resource Include="WPF_Binding\Images\v.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\edit_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\female_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\file_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\format_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\help_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\male_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\view_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Panels\Images\main_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="file_folder\Pics\Koala.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ContextMenu\Pics\copy.png" />
+    <Resource Include="ContextMenu\Pics\cut.png" />
+    <Resource Include="ContextMenu\Pics\exit.png" />
+    <Resource Include="ContextMenu\Pics\paste-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Pics\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Pics\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Pics\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Pics\paste-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\about.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\add_memo.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\bold.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Close_butt.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\content-paste-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\cut.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Decrease Font-.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\exit.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\file_32.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\floppy-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\help_32.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\ic_content_copy_48px-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Increase Font.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\indent-decrease-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\indent-increase-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Italic.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\male_user.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Minimize_butt.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\ok.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Redo-2-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\search_memo.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\settings-alt-32.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\text_align_center-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\text_align_left-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\text_align_right-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\tools.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\underline.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Undo-2-16.png" />
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\view_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Toolbar_Ribbon\Ribbon_img\Title.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="Adv_WPF.WPF_Binding.wpf_binding_main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.WPF_Binding"
+        mc:Ignorable="d"
+        Title="wpf_binding_main" Height="319.349" Width="333.05">
+    <Grid>
+        <Button Content="OneWay Binding" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Width="249" Height="40" FontSize="18" Click="Button_Click"/>
+        <Button Content="TwoWay Binding" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Width="249" Height="40" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="OneWay to Source Binding" HorizontalAlignment="Left" Margin="40,121,0,0" VerticalAlignment="Top" Width="249" Height="40" FontSize="18" Click="Button_Click_2"/>
+        <Button Content="String Format &amp; Binding" HorizontalAlignment="Left" Margin="40,171,0,0" VerticalAlignment="Top" Width="249" Height="40" FontSize="18" Click="Button_Click_3"/>
+        <Button Content="Final Project with Binding" HorizontalAlignment="Left" Margin="40,222,0,0" VerticalAlignment="Top" Width="249" Height="40" FontSize="18" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,92 @@
+﻿<Window x:Name="io_file_folder_wind" x:Class="Adv_WPF.file_folder.io_file_folder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.file_folder"
+        mc:Ignorable="d"
+        Title="io_file_folder" Height="462" Width="719" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="172*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="file_exists" Content="check file exists" HorizontalAlignment="Left" Margin="6,10,0,0" VerticalAlignment="Top" Width="106" Height="25" Click="file_exists_Click" Grid.Column="1"/>
+        <Label Content="Source File Name:" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="file_tbox" HorizontalAlignment="Left" Height="23" Margin="125,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" Text="E:\tuts\Koala.jpg" Grid.ColumnSpan="2"/>
+        <Button x:Name="app_pah_butt" Content="App Folder" HorizontalAlignment="Left" Margin="414,40,0,0" VerticalAlignment="Top" Width="75" Click="app_pah_butt_Click" Grid.Column="1"/>
+        <Button x:Name="delete_file_butt" Content="Delete File" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.5,0.5" Height="25" Click="delete_file_butt_Click" Grid.Column="1"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.528"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="browse_butt" Content="Browse" HorizontalAlignment="Left" Margin="132,10,0,0" VerticalAlignment="Top" Width="75" Click="browse_butt_Click"  />
+        <Button x:Name="copy_file_butt" Content="Copy File" HorizontalAlignment="Left" Margin="125,150,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.5,0.5" Height="25" Click="copy_file_butt_Click"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.528"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Target File Name:" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="target_file_tbox" HorizontalAlignment="Left" Height="23" Margin="125,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" Text="E:\tuts\Koala.jpg" Grid.ColumnSpan="2"/>
+        <Button x:Name="target_browse_butt" Content="Browse" HorizontalAlignment="Left" Margin="125,87,0,0" VerticalAlignment="Top" Width="75" Click="target_browse_butt_Click"   />
+        <Button x:Name="move_file_butt" Content="Move File" HorizontalAlignment="Left" Margin="5,150,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.5,0.5" Height="25"  Grid.Column="1" Click="move_file_butt_Click"  >
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.528"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <GroupBox Grid.ColumnSpan="2" Header="Folders" HorizontalAlignment="Left" Height="231" Margin="30,190,0,0" VerticalAlignment="Top" Width="670">
+            <Canvas    >
+                <Button x:Name="folder_exists_butt" Content="Check Folder Exists" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Height="25"   Canvas.Left="135" Canvas.Top="53" Click="folder_exists_butt_Click"/>
+                <Button x:Name="delete_folder_butt" Content="Delete Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" Height="25"   Canvas.Left="365" Canvas.Top="53" Click="delete_folder_butt_Click"  >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.528"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+                <Button x:Name="create_folder_butt" Content="Create Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" Height="25"    Canvas.Left="265" Canvas.Top="53" Click="create_folder_butt_Click"    >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.528"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+                <Button x:Name="move_folder_butt" Content="Move Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" Height="25"    Canvas.Left="470" Canvas.Top="53" Click="move_folder_butt_Click"  >
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.528"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+                <Label Content="Source Folder Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="10" Canvas.Top="7"/>
+                <TextBox x:Name="source_folder_tbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="404" Text="E:\tuts\Koala" Canvas.Left="135" Canvas.Top="10"/>
+                <Button x:Name="app_folder_butt" Content="App Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"    Canvas.Left="545" Canvas.Top="12" Click="app_folder_butt_Click"/>
+            </Canvas>
+        </GroupBox>
+
+    </Grid>
+</Window>

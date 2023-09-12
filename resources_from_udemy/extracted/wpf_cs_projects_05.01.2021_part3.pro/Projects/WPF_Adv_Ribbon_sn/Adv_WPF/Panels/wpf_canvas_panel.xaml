@@ -1,0 +1,20 @@
+﻿<Window x:Name="wpf_canvas_panel_window" x:Class="Adv_WPF.Panels.wpf_canvas_panel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.Panels"
+        mc:Ignorable="d"
+        Title="wpf_canvas_panel" Height="369.929" Width="466.904" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="240" Margin="41,40,0,0" VerticalAlignment="Top" Width="340" Background="#FFDCF0ED">
+            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="127" Canvas.Top="156"/>
+            <Label Content="Label" Canvas.Left="43" Canvas.Top="62"/>
+            <RadioButton Content="RadioButton" Canvas.Left="93" Canvas.Top="114"/>
+            <Image Height="100" Canvas.Left="110" Canvas.Top="33" Width="100"/>
+            <CheckBox Content="CheckBox" Canvas.Left="247" Canvas.Top="129"/>
+            <Button Content="Button" Height="20" Canvas.Left="208" Canvas.Top="190" Width="75"/>
+        </Canvas>
+
+    </Grid>
+</Window>

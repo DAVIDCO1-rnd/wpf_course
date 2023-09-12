@@ -1,0 +1,64 @@
+﻿<Window x:Name="wfp_data_triggers_wind" x:Class="pro_wpf_tutorials.Triggers.wpf_data_triggers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pro_wpf_tutorials.Triggers"
+        mc:Ignorable="d"
+        Title="wpf_data_triggers" Height="322" Width="524" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="WindowButt" TargetType="Button">
+            <Setter Property="IsEnabled" Value="False"></Setter>
+            <Setter Property="Visibility" Value="Hidden"></Setter>
+
+            <Style.Triggers>
+
+                <DataTrigger Binding="{Binding  ElementName=is_bold_chbox,Path=IsChecked }" Value="True">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding ElementName=is_enabled_butt,Path=IsChecked}" Value="True">
+                    <Setter Property="IsEnabled" Value="True"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding ElementName=is_visible_butt,Path=IsChecked}" Value="True">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.Resources>
+            <Style x:Key="GridButt" TargetType="Button">
+                <Setter Property="IsEnabled" Value="False"></Setter>
+                <Setter Property="Visibility" Value="Hidden"></Setter>
+
+                <Style.Triggers>
+
+                    <DataTrigger Binding="{Binding  ElementName=is_bold_chbox,Path=IsChecked }" Value="True">
+                        <Setter Property="FontWeight" Value="Bold"/>
+                    </DataTrigger>
+
+                    <DataTrigger Binding="{Binding ElementName=is_enabled_butt,Path=IsChecked}" Value="True">
+                        <Setter Property="IsEnabled" Value="True"/>
+                    </DataTrigger>
+
+                    <DataTrigger Binding="{Binding ElementName=is_visible_butt,Path=IsChecked}" Value="True">
+                        <Setter Property="Visibility" Value="Visible"/>
+                    </DataTrigger>
+
+
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Button x:Name="Butt_1" Content="I'm Cute Button!" HorizontalAlignment="Left" Margin="185,175,0,0" VerticalAlignment="Top" Width="125" Height="50" Style="{DynamicResource WindowButt}"/>
+        <CheckBox x:Name="is_bold_chbox" Content="Font Is Bold" HorizontalAlignment="Left" Margin="40,80,0,0" VerticalAlignment="Top" Width="115"/>
+        <CheckBox x:Name="is_enabled_butt" Content="Button is Enabled" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top" Width="115"/>
+        <CheckBox x:Name="is_visible_butt" Content="Button is Visible" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Width="155"/>
+        <Button Content="Property Triggers" HorizontalAlignment="Left" Margin="360,120,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="Button_Click"/>
+
+    </Grid>
+</Window>

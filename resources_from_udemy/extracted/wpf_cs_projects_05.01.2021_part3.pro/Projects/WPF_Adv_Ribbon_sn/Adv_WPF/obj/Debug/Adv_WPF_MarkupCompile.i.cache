@@ -1,0 +1,20 @@
+﻿Adv_WPF
+
+
+winexe
+C#
+.cs
+C:\Users\Rec User\source\repos\cs\WPF_Adv_sn\Adv_WPF\obj\Debug\
+Adv_WPF
+none
+false
+DEBUG;TRACE
+C:\Users\Rec User\source\repos\cs\WPF_Adv_sn\Adv_WPF\App.xaml
+331444934451
+
+38368252789
+161208103111
+2nd_ctls\wpf_border.xaml;2nd_ctls\wpf_checkbox.xaml;2nd_ctls\wpf_groupbox.xaml;2nd_ctls\wpf_all_ctls.xaml;2nd_ctls\wpf_password_tbox.xaml;2nd_ctls\wpf_progress_bar.xaml;2nd_ctls\wpf_radio_button.xaml;2nd_ctls\wpf_slider.xaml;ContextMenu\wpf_contextmenu.xaml;file_folder\io_file_info.xaml;file_folder\io_file_folder.xaml;file_folder\io_folder_info.xaml;file_folder\io_main_window.xaml;Panels\wpf_canvas_panel.xaml;Panels\wpf_dock_panel.xaml;Panels\wpf_panels_main_window.xaml;Panels\wpf_panels_window_list.xaml;Panels\wpf_stack_panel.xaml;Panels\wpf_wrap_panel.xaml;Resource\MainWindow.xaml;Resource\second_win.xaml;Events\wpf_events.xaml;Toolbar_Ribbon\wpf_ribbon.xaml;Toolbar_Ribbon\wpf_StatusBar.xaml;Toolbar_Ribbon\wpf_tab_control.xaml;Toolbar_Ribbon\wpf_toolbar.xaml;Toolbar_Ribbon\wpf_toolbar_tray.xaml;WPF_Binding\wpf_binding_main.xaml;WPF_Binding\wpf_binding_project.xaml;WPF_Binding\wpf_oneway_2_source_binding.xaml;WPF_Binding\wpf_oneway_binding.xaml;WPF_Binding\wpf_string_format.xaml;WPF_Binding\wpf_twoway_binding.xaml;
+
+True
+

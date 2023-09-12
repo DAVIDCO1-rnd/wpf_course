@@ -1,0 +1,135 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Emp"
+        xmlns:MainDs="clr-namespace:WPF_Emp.MainDs" x:Name="Emp_Window" x:Class="WPF_Emp.EmpWindow"
+        mc:Ignorable="d"
+        Title="EmpWindow" Height="672" Width="854" WindowStartupLocation="CenterScreen" Loaded="Emp_Window_Loaded">
+    <Window.Resources>
+        <MainDs:EmpDs x:Key="empDs"/>
+
+        <CollectionViewSource x:Key="emp_InfoViewSource" Source="{Binding Emp_Info, Source={StaticResource empDs}}"/>
+    </Window.Resources>
+    <Grid DataContext="{StaticResource emp_InfoViewSource}">
+
+        <DataGrid x:Name="emp_InfoDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" Margin="10,495,0,0" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False" HorizontalAlignment="Left" Width="830" Height="136" VerticalAlignment="Top" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserResizeRows="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="idColumn" Width="SizeToHeader" IsReadOnly="True" Header="id" Binding="{Binding id}"/>
+                <DataGridTextColumn x:Name="first_NameColumn" Width="SizeToHeader" Header="First Name" Binding="{Binding First_Name}"/>
+                <DataGridTextColumn x:Name="surnameColumn" Width="SizeToHeader" Header="Surname" Binding="{Binding Surname}"/>
+                <DataGridTextColumn x:Name="genderColumn" Width="SizeToHeader" Header="Gender" Binding="{Binding Gender}"/>
+                <DataGridTemplateColumn x:Name="dOBColumn" Width="SizeToHeader" Header="DOB">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding DOB, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn x:Name="hire_DateColumn" Width="SizeToHeader" Header="Hire Date">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding Hire_Date, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn x:Name="cell_NumberColumn" Width="SizeToHeader" Header="Cell Number" Binding="{Binding Cell_Number}"/>
+                <DataGridTextColumn x:Name="emailColumn" Width="SizeToHeader" Header="Email" Binding="{Binding Email}"/>
+                <DataGridCheckBoxColumn x:Name="has_InsuranceColumn" Width="SizeToHeader" Header="Has Insurance" Binding="{Binding Has_Insurance}"/>
+                <DataGridTextColumn x:Name="m_SalaryColumn" Width="SizeToHeader" Header="M Salary" Binding="{Binding M_Salary}"/>
+                <DataGridTextColumn x:Name="debtColumn" Width="SizeToHeader" Header="Debt" Binding="{Binding Debt}"/>
+                <DataGridTextColumn x:Name="addressColumn" Width="SizeToHeader" Header="Address" Binding="{Binding Address}"/>
+                <DataGridTextColumn x:Name="commentColumn" Width="SizeToHeader" Header="Comment" Binding="{Binding Comment}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <GroupBox x:Name="items_gbox" Header="Details" HorizontalAlignment="Left" Height="450" Margin="10,51,0,0" VerticalAlignment="Top" Width="830">
+            <Grid x:Name="grid1" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" Width="538">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Content="id:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="idTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding id, Mode=OneWay}" VerticalAlignment="Center" Width="120" IsEnabled="False" Background="#FFF1F1F1"/>
+                <Label Content="First Name:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="1" VerticalAlignment="Center"/>
+                <TextBox x:Name="first_NameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="1" Text="{Binding First_Name, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Surname:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="surnameTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="2" Text="{Binding Surname, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Gender:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="3" VerticalAlignment="Center"/>
+                <TextBox x:Name="genderTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="3" Text="{Binding Gender, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="DOB:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="4" VerticalAlignment="Center"/>
+                <DatePicker x:Name="dOBDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="4" SelectedDate="{Binding DOB, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+                <Label Content="Hire Date:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="5" VerticalAlignment="Center"/>
+                <DatePicker x:Name="hire_DateDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="5" SelectedDate="{Binding Hire_Date, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+                <Label Content="Cell Number:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="6" VerticalAlignment="Center"/>
+                <TextBox x:Name="cell_NumberTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="6" Text="{Binding Cell_Number, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Email:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="7" VerticalAlignment="Center"/>
+                <TextBox x:Name="emailTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="7" Text="{Binding Email, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Has Insurance:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="8" VerticalAlignment="Center"/>
+                <CheckBox x:Name="has_InsuranceCheckBox" Content="" Grid.Column="1" HorizontalAlignment="Left" IsChecked="{Binding Has_Insurance, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" Margin="3" Grid.Row="8" VerticalAlignment="Center"/>
+                <Label Content="M Salary:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="9" VerticalAlignment="Center"/>
+                <TextBox x:Name="m_SalaryTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="9" Text="{Binding M_Salary, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Debt:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="10" VerticalAlignment="Center"/>
+                <TextBox x:Name="debtTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="10" Text="{Binding Debt, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+                <Label Content="Address:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="11" VerticalAlignment="Center"/>
+                <TextBox x:Name="addressTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-307,4" Grid.Row="11" Text="{Binding Address, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="432"/>
+                <Label Content="Comment:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="12" VerticalAlignment="Center"/>
+                <TextBox x:Name="commentTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="3,4,-308,4" Grid.Row="12" Text="{Binding Comment, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="432"/>
+            </Grid>
+        </GroupBox>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Margin="10,0,0,0" Width="826" Height="50" VerticalAlignment="Top">
+            <Canvas >
+                <Button x:Name="new_butt" Canvas.Left="4" Canvas.Top="4" Width="75" Height="40" Click="new_butt_Click" Cursor="Hand">
+                    <StackPanel   >
+                        <Image Source="Pics/De_Butts/new_butt.png" Height="18" Width="47" />
+                        <Label Content="Add New" Margin="0" Padding="5,0,5,5" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="edit_butt" Canvas.Left="90" Canvas.Top="4" Width="75" Height="40" Click="edit_butt_Click"  Cursor="Hand">
+                    <StackPanel   >
+                        <Image Source="Pics/De_Butts/edit_butt.png" Height="18" Width="47" />
+                        <Label Content="Edit" Margin="0" Padding="5,0,5,5" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="del_butt" Canvas.Left="175" Canvas.Top="4" Width="75" Height="40" Click="del_butt_Click"  Cursor="Hand">
+                    <StackPanel   >
+                        <Image Source="Pics/De_Butts/del_butt.png" Height="18" Width="47" />
+                        <Label Content="Delete" Margin="0" Padding="5,0,5,5" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="save_butt" Canvas.Left="259"  Click="save_butt_Click" Canvas.Top="4" Width="90" Height="40"  Cursor="Hand">
+                    <StackPanel   >
+                        <Image Source="Pics/De_Butts/save_utt.png" Height="18" Width="47" />
+                        <Label Content="Save Changes" Margin="0" Padding="5,0,5,5" />
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="cancel_butt" Canvas.Left="358" Click="cancel_butt_Click" Canvas.Top="4" Width="75" Height="40"  Cursor="Hand">
+                    <StackPanel   >
+                        <Image Source="Pics/De_Butts/canecl_butt.png" Height="18" Width="47" />
+                        <Label Content="Cancel" Margin="0" Padding="5,0,5,5" />
+                    </StackPanel>
+                </Button>
+            </Canvas>
+        </Border>
+
+    </Grid>
+</Window>

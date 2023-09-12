@@ -1,0 +1,39 @@
+﻿<Window x:Name="login_wind" x:Class="wpf_diary_app.login_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_diary_app"
+        mc:Ignorable="d"
+        Title="Login to Diary Application" Height="418.007" Width="357.028" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="login_wind_Loaded" Icon="Data/Other_Img/male_user.png">
+    <Grid>
+        <GroupBox Header="User Info" HorizontalAlignment="Left" Height="285" Margin="18,21,0,0" VerticalAlignment="Top" Width="308">
+            <Canvas  >
+                <Border BorderBrush="Black" BorderThickness="1" Height="107" Canvas.Left="96" Canvas.Top="20" Width="121" CornerRadius="2">
+                    <Image x:Name="image_img"  />
+                </Border>
+                <Label Content="User Name:" Canvas.Left="17" Canvas.Top="171" Width="73"/>
+                <Label Content="Password:" Canvas.Left="19" Canvas.Top="207"/>
+                <PasswordBox x:Name="user_pass_tbox" Canvas.Left="96" Canvas.Top="209" Width="121" FontSize="16"/>
+                <ComboBox x:Name="user_combo" Canvas.Left="96" Canvas.Top="173" Width="120" Cursor="Hand" SelectionChanged="user_combo_SelectionChanged"  >
+                    
+                </ComboBox>
+            </Canvas>
+        </GroupBox>
+
+        <Button x:Name="save_butt"  HorizontalAlignment="Left" Margin="30,330,0,0" VerticalAlignment="Top" Width="123" Height="31" Cursor="Hand" Click="save_butt_Click" IsDefault="True"   >
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="Data/Other_Img/ok.png" Height="20" Width="24" />
+                <Label Content="Ok" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="cancel_butt"  HorizontalAlignment="Left" Margin="167,330,0,0" VerticalAlignment="Top" Width="77" Height="31" Cursor="Hand" Click="cancel_butt_Click" IsCancel="True"   >
+            <StackPanel Orientation="Horizontal" >
+                <Image Source="Data/Other_Img/exit.png" Height="20" Width="24" />
+                <Label Content="Exit" />
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

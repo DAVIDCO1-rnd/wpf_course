@@ -1,0 +1,13 @@
+﻿<Window x:Class="Adv_WPF.second_win"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF"
+        mc:Ignorable="d"
+        Title="second_win" Height="312.278" Width="410.854">
+    <Grid>
+        <Button Content="{DynamicResource exit_butt_text}" HorizontalAlignment="Left" Margin="338,10,0,0" VerticalAlignment="Top" Width="{DynamicResource exit_butt_width}" Height="{DynamicResource exit_butt_height}" Background="{DynamicResource exit_butt_back_color}" Cursor="{DynamicResource exit_butt_cursor}"/>
+
+    </Grid>
+</Window>

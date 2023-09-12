@@ -1,0 +1,64 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="main_window" x:Class="Adv_WPF.MainWindow"  mc:Ignorable="d"
+        Title="WPF Resource" Height="323.306" Width="682.868" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <System:Double x:Key="butt_height">30</System:Double>
+        <System:Double x:Key="butt_width">100</System:Double>
+        <SolidColorBrush x:Key="butt_back_color" Color="#FFF5EFEF"/>
+        <Cursor x:Key="butt_cursor">Hand</Cursor>
+        <System:Double x:Key="window_read_butt_width">132</System:Double>
+    </Window.Resources>
+    <Grid x:Name="main_grid">
+
+        <Grid x:Name="first_sub_grid" HorizontalAlignment="Left" Height="213" Margin="20,33,0,0" VerticalAlignment="Top" Width="142" Background="#FFF0F0F0">
+            <Grid.Resources>
+
+                <System:Double x:Key="grid_butt_width">100</System:Double>
+                <System:Double x:Key="grid_butt_height">25</System:Double>
+            </Grid.Resources>
+
+
+
+            <Button x:Name="save_butt" Content="Save" HorizontalAlignment="Left" Margin="27,44,0,0" VerticalAlignment="Top" Width="{DynamicResource grid_butt_width}" Height="{DynamicResource grid_butt_height}" Background="{DynamicResource butt_back_color}" Cursor="{DynamicResource butt_cursor}"/>
+            <Button Content="New" HorizontalAlignment="Left" Margin="27,84,0,0" VerticalAlignment="Top" Width="{DynamicResource grid_butt_width}" Height="{DynamicResource grid_butt_height}" Background="{DynamicResource butt_back_color}" Cursor="{DynamicResource butt_cursor}"/>
+            <Button Content="Edit" HorizontalAlignment="Left" Margin="27,123,0,0" VerticalAlignment="Top" Background="{DynamicResource butt_back_color}" Cursor="{DynamicResource butt_cursor}" Height="{DynamicResource grid_butt_height}" Width="{DynamicResource grid_butt_width}"/>
+        </Grid>
+        <Button Content="{DynamicResource exit_butt_text}" HorizontalAlignment="Left" Margin="303,10,0,0" VerticalAlignment="Top" Width="{DynamicResource exit_butt_width}" Height="{DynamicResource exit_butt_height}" Background="{DynamicResource exit_butt_back_color}" Cursor="{DynamicResource exit_butt_cursor}"/>
+        <Grid x:Name="second_sub_grid" HorizontalAlignment="Left" Height="213" Margin="180,33,0,0" VerticalAlignment="Top" Width="109" Background="#FFF7F1F1">
+            <Grid.Resources>
+
+
+                <System:Double x:Key="grid2_butt_width">75</System:Double>
+                <System:Double x:Key="grid2_butt_height">NaN</System:Double>
+
+            </Grid.Resources>
+            <Button Content="Save" HorizontalAlignment="Left" Margin="24,72,0,0" VerticalAlignment="Top" Width="{DynamicResource grid2_butt_width}" Height="{DynamicResource grid2_butt_height}"/>
+            <Button Content="New" HorizontalAlignment="Left" Margin="24,107,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
+        <Grid x:Name="grid_res_loader" HorizontalAlignment="Left" Height="118" Margin="402,33,0,0" VerticalAlignment="Top" Width="261" Background="#FFDBEADD">
+            <Grid.Resources>
+                
+                <System:Double x:Key="grid_res_load_butt_width">132</System:Double>
+            </Grid.Resources>
+            <Button x:Name="window_res_butt" Content="Load Window Resource" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Width="{DynamicResource window_read_butt_width}" Click="window_res_butt_Click"/>
+            <Label x:Name="window_res_lbl" Content="Label" HorizontalAlignment="Left" Margin="158,21,0,0" VerticalAlignment="Top" Width="94"/>
+            <Button x:Name="app_res_butt" Content="Load App Resource" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Width="{DynamicResource load_butt_app_res_butt}" Click="app_res_butt_Click"/>
+            <Label x:Name="app_res_lbl" Content="Label" HorizontalAlignment="Left" Margin="158,53,0,0" VerticalAlignment="Top" Width="94"/>
+            <Button x:Name="grid_res_butt" Content="Load Grid Resource" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Width="{DynamicResource grid_res_load_butt_width}" Click="grid_res_butt_Click"/>
+            <Label x:Name="grid_res_lbl" Content="Label" HorizontalAlignment="Left" Margin="158,84,0,0" VerticalAlignment="Top" Width="94"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="118" Margin="401,163,0,0" VerticalAlignment="Top" Width="262" Background="#FFEEF0F1">
+            <Button x:Name="save_window_res_butt" Content="Save to Window Resource" HorizontalAlignment="Left" Margin="8,25,0,0" VerticalAlignment="Top" Width="147" Click="save_window_res_butt_Click" />
+            <Button x:Name="save_app_res_butt" Content="Save to App Resource" HorizontalAlignment="Left" Margin="8,56,0,0" VerticalAlignment="Top" Width="147" Click="save_app_res_butt_Click" />
+            <Button x:Name="save_grid_res_butt" Content="Save to Grid Resource" HorizontalAlignment="Left" Margin="8,87,0,0" VerticalAlignment="Top" Width="147" Click="save_grid_res_butt_Click" />
+            <TextBox x:Name="save_window_res_lbl" HorizontalAlignment="Left" Height="23" Margin="179,23,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="73"/>
+            <TextBox x:Name="save_app_res_lbl" HorizontalAlignment="Left" Height="23" Margin="179,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="73"/>
+            <TextBox x:Name="save_grid_res_lbl" HorizontalAlignment="Left" Height="23" Margin="179,84,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="73"/>
+        </Grid>
+    </Grid>
+</Window>

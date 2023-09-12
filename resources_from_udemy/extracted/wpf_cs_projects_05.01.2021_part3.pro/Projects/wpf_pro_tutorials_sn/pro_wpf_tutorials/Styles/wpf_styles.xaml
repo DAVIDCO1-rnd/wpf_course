@@ -1,0 +1,25 @@
+﻿<Window x:Name="wpf_style_window" x:Class="pro_wpf_tutorials.Styles.wpf_styles"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pro_wpf_tutorials.Styles"
+        mc:Ignorable="d"
+        Title="Styles in WPF" Height="327" Width="509" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="butt_style" TargetType="Button">
+            <Setter Property="Foreground" Value="red"/>
+            <Setter Property="Background" Value="Yellow"></Setter>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Width" Value="250"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="butt1" Content="Button 1"  HorizontalAlignment="Left" Margin="195,45,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource butt_style}" Click="butt1_Click"  />
+        <Button x:Name="butt2" Content="Button 2" HorizontalAlignment="Left" Margin="195,85,0,0" VerticalAlignment="Top"  Height="25" Style="{DynamicResource butt_style}"/>
+        <Button x:Name="butt3" Content="Button 3" HorizontalAlignment="Left" Margin="195,125,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource butt_style}"/>
+        <Button x:Name="butt4" Content="Button 4" HorizontalAlignment="Left" Margin="195,165,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource butt_style}"/>
+
+    </Grid>
+</Window>

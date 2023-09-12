@@ -1,0 +1,102 @@
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\First_cs.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\image_opf.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_info_project.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_sfd.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\app_settings.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\grid_cols_rows.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\grouping_ctls.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\group_align.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\layers_ctls.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\MainWindow.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\margin_ctls.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\rotate_ctls.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\App.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\First_cs.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\image_opf.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_info_project.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_sfd.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\app_settings.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\grid_cols_rows.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\grouping_ctls.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\group_align.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\layers_ctls.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\MainWindow.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\margin_ctls.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Design\rotate_ctls.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csproj.GenerateResource.cache
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csproj.CoreCompileInputs.cache
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\practical_cs_code.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\practical_cs_code.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\koala_resized.jpg
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\me.jpg
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\mm.jpg
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\data\temp.jpg
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\menu_ctl.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\menu_ctl.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\Mdi_child_window.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\mdi_main_window.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\Mdi_child_window.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\mdi_main_window.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.exe.config
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.exe
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.pdb
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf_MarkupCompile.cache
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf_MarkupCompile.lref
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.g.resources
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.exe
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.pdb
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.Properties.Resources.resources
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\textbox_adv_topics.g.cs
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\textbox_adv_topics.baml
+C:\Users\Rec User\source\repos\cs\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csprojAssemblyReference.cache
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\data\temp.jpg
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\koala_resized.jpg
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\me.jpg
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\my_pic\mm.jpg
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.exe.config
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.exe
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\bin\Debug\Hi_wpf.pdb
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\First_cs.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\image_opf.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\Mdi_child_window.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\mdi_main_window.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\menu_ctl.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\practical_cs_code.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\textbox_adv_topics.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_info_project.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_sfd.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\app_settings.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\grid_cols_rows.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\grouping_ctls.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\group_align.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\layers_ctls.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\MainWindow.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\margin_ctls.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\rotate_ctls.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\App.g.cs
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf_MarkupCompile.cache
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf_MarkupCompile.lref
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\First_cs.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\image_opf.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\Mdi_child_window.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\Mdi\mdi_main_window.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\menu_ctl.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\practical_cs_code.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\textbox_adv_topics.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_info_project.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\CsCode\txt_sfd.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\app_settings.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\grid_cols_rows.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\grouping_ctls.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\group_align.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\layers_ctls.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\MainWindow.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\margin_ctls.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Design\rotate_ctls.baml
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.g.resources
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.Properties.Resources.resources
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csproj.GenerateResource.cache
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csproj.CoreCompileInputs.cache
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.exe
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\Hi_wpf.pdb
+E:\a\wpf_cs\Projects\hello_wpf_sn\hello_wpf\obj\Debug\hello_wpf.csprojAssemblyReference.cache

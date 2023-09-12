@@ -1,0 +1,44 @@
+﻿<Window x:Class="Adv_WPF.Toolbar_Ribbon.wpf_toolbar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.Toolbar_Ribbon"
+        mc:Ignorable="d"
+        Title="wpf_toolbar" Height="222" Width="524">
+    <Grid>
+        <ToolBar Height="35" VerticalAlignment="Top"  >
+            <Separator/>
+            <Button x:Name="undo_butt" Cursor="Hand"  Click="undo_butt_Click" >
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Pics/exit.png" />
+                    <Label Content="Undo"/>
+                </StackPanel>
+            </Button>
+            <Separator/>
+            <Button x:Name="copy_butt" Content="Copy" Cursor="Hand" Click="copy_butt_Click"/>
+            <Button x:Name="cut_butt" Content="Cut" Cursor="Hand" Click="cut_butt_Click"/>
+            <Button x:Name="paste_butt" Content="Paste" Cursor="Hand" Click="paste_butt_Click"/>
+            <Separator/>
+            <Button x:Name="img_copy_butt" Cursor="Hand" >
+                <Image Source="Pics/copy.png" Height="21" Width="21"  />
+            </Button>
+            <Button x:Name="img_cut_butt" Cursor="Hand" >
+                <Image Source="Pics/cut.png" Height="21" Width="21"  />
+            </Button>
+            <Button x:Name="img_paste_butt" Cursor="Hand" >
+                <Image Source="Pics/paste-16.png" Height="21" Width="21"   />
+            </Button>
+            <Separator/>
+            <Label Content="Font Size:"/>
+            <ComboBox SelectedIndex="0" Cursor="Hand">
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="12"/>
+                <ComboBoxItem Content="14"/>
+                <ComboBoxItem Content="16"/>
+            </ComboBox>
+            <MenuItem Header="Exit App" Cursor="Hand"></MenuItem>
+        </ToolBar>
+
+    </Grid>
+</Window>

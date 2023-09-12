@@ -1,0 +1,18 @@
+﻿<Window x:Name="wpf_dock_panel_window" x:Class="Adv_WPF.Panels.wpf_dock_panel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF.Panels"
+        mc:Ignorable="d"
+        Title="wpf_dock_panel" Height="331.495" Width="457.295" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DockPanel x:Name="my_dock_panel" HorizontalAlignment="Left" Height="213" Margin="71,34,0,0" VerticalAlignment="Top" Width="313" Background="#FFF2EEF3">
+            <Button Content="Top" Height="36" VerticalAlignment="Top" DockPanel.Dock="Top"/>
+            <Button Content="Bottom" Height="38" VerticalAlignment="Top" DockPanel.Dock="Bottom"/>
+            <Button Content="Right" Width="45" DockPanel.Dock="Right"/>
+            <Button Content="Left" Width="45"/>
+            <Button Content="Fill" />
+        </DockPanel>
+    </Grid>
+</Window>

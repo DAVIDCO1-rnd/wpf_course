@@ -1,0 +1,76 @@
+﻿<Application x:Class="pro_wpf_tutorials.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:pro_wpf_tutorials"
+             StartupUri="Templates/wpf_temp_image_butt.xaml">
+    
+    <Application.Resources>
+        
+        <Style x:Key="small_butt" TargetType="Button">
+            <Setter Property="Foreground" Value="DarkGreen"/>
+            <Setter Property="Background" Value="Azure"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Width" Value="250"/>
+        </Style>
+
+        <Style x:Key="AppButt" TargetType="Button">
+            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="Content" Value="Grid Hi!"/>
+            <Setter Property="Width" Value="120"/>
+            <Style.Triggers>
+
+                <Trigger  Property="IsMouseOver" Value="True">
+                    <Setter  Property="FontSize" Value="18"/>
+                    <Setter  Property="Foreground" Value="Red"/>
+                    <Setter  Property="Cursor" Value="Hand"/>
+                    <Setter  Property="BorderThickness" Value="2"/>
+                    <Setter Property="Content" Value="I'm Button!"/>
+                    <Setter Property="Width" Value="150"/>
+                </Trigger>
+
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Content" Value="I'm Pressed!"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="AppDataTrigerButt" TargetType="Button">
+            <Setter Property="IsEnabled" Value="False"></Setter>
+            <Setter Property="Visibility" Value="Hidden"></Setter>
+
+            <Style.Triggers>
+
+                <DataTrigger Binding="{Binding  ElementName=is_bold_chbox,Path=IsChecked }" Value="True">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding ElementName=is_enabled_butt,Path=IsChecked}" Value="True">
+                    <Setter Property="IsEnabled" Value="True"/>
+                </DataTrigger>
+
+                <DataTrigger Binding="{Binding ElementName=is_visible_butt,Path=IsChecked}" Value="True">
+                    <Setter Property="Visibility" Value="Visible"/>
+                </DataTrigger>
+
+
+            </Style.Triggers>
+        </Style>
+
+        <ControlTemplate x:Key="MyCustomButt" TargetType="{x:Type Button}">
+            <Grid>
+                <Border x:Name="in_border" Background="{TemplateBinding Property=Background}" CornerRadius="8" 
+                            Cursor="{TemplateBinding Cursor}"    BorderThickness="{TemplateBinding BorderThickness}"  BorderBrush="{TemplateBinding Property=BorderBrush}" />
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsMouseOver"  Value="True">
+                    <Setter Property="Background"  TargetName="in_border" Value="Yellow"/>
+                    <Setter Property="Cursor"  TargetName="in_border" Value="Hand"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </Application.Resources>
+    
+</Application>

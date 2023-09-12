@@ -1,0 +1,46 @@
+﻿<Window x:Name="event_window" x:Class="Adv_WPF.wpf_events"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adv_WPF"
+        mc:Ignorable="d"
+        Title="wpf_events" Height="374.733" Width="522.954" 
+        Loaded="event_window_Loaded"  
+        KeyDown="event_window_KeyDown"
+       Closing="event_window_Closing"  >
+    <Grid>
+        <Button x:Name="hi_butt" Content="Save F2" HorizontalAlignment="Left" Margin="217,27,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="hello_butt" Content="New F8" HorizontalAlignment="Left" Margin="217,57,0,0" VerticalAlignment="Top" Width="75" Click="hello_butt_Click" MouseEnter="hello_butt_MouseEnter" MouseLeave="hello_butt_MouseLeave"/>
+        <TextBox x:Name="first_tbox" HorizontalAlignment="Left" Height="23" Margin="217,91,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120"
+                 TextChanged="first_tbox_TextChanged" GotFocus="first_tbox_GotFocus" LostFocus="first_tbox_LostFocus" TabIndex="0"/>
+        <TextBox x:Name="second_tbox" HorizontalAlignment="Left" Height="23" 
+                 Margin="217,119,0,0" TextWrapping="Wrap" Text="2" 
+                 VerticalAlignment="Top" Width="120" TabIndex="1"
+                 GotFocus="second_tbox_GotFocus" LostFocus="second_tbox_LostFocus"/>
+        <TextBox x:Name="third_tbox" HorizontalAlignment="Left" Height="23"
+                 Margin="217,147,0,0" TextWrapping="Wrap" Text="3"
+                 VerticalAlignment="Top" Width="120" TabIndex="2"
+                 GotFocus="third_tbox_GotFocus" LostFocus="third_tbox_LostFocus"/>
+        <Button x:Name="edit_butt" Content="Edit" HorizontalAlignment="Left"
+                Margin="363,98,0,0" VerticalAlignment="Top" Width="90"
+                Height="32" Click="edit_butt_Click"
+                MouseEnter="edit_butt_MouseEnter" MouseLeave="edit_butt_MouseLeave" Cursor="Hand"/>
+        <ComboBox x:Name="fname_cbox" HorizontalAlignment="Left" Margin="217,192,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="fname_cbox_SelectionChanged" SelectedIndex="3">
+            <ComboBoxItem Content="Alex" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Sara" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Mary" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Feze" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Mike" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Button x:Name="show_butt" Content="Show Selected" HorizontalAlignment="Left" Margin="349,193,0,0" VerticalAlignment="Top" Width="110" Click="show_butt_Click"/>
+        <ListBox x:Name="fname_listbox" HorizontalAlignment="Left" Height="100" Margin="217,229,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="fname_listbox_SelectionChanged">
+            <ListBoxItem Content="Sara"/>
+            <ListBoxItem Content="Mary"/>
+            <ListBoxItem Content="Feze"/>
+            <ListBoxItem Content="Mike"/>
+        </ListBox>
+        <Button x:Name="show_list_butt" Content="Show Selected" HorizontalAlignment="Left" Margin="349,229,0,0" VerticalAlignment="Top" Width="110" Click="show_list_butt_Click"/>
+
+    </Grid>
+</Window>

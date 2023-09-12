@@ -1,0 +1,17 @@
+﻿<Window x:Name="wpp_app_style2_wind" x:Class="pro_wpf_tutorials.Styles.wpf_styles2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pro_wpf_tutorials.Styles"
+        mc:Ignorable="d"
+        Title="wpf_styles2" Height="292" Width="414" Background="#FFD8D8D8">
+
+    <Grid>
+        <Button x:Name="butt1" Content="Button 1"  HorizontalAlignment="Left" Margin="135,35,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource small_butt}"   />
+        <Button x:Name="butt2" Content="Button 2" HorizontalAlignment="Left" Margin="135,75,0,0" VerticalAlignment="Top"  Height="25" Style="{DynamicResource small_butt}"  />
+        <Button x:Name="butt3" Content="Button 3" HorizontalAlignment="Left" Margin="135,115,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource small_butt}" />
+        <Button x:Name="butt4" Content="Button 4" HorizontalAlignment="Left" Margin="135,155,0,0" VerticalAlignment="Top"   Height="25" Style="{DynamicResource small_butt}"  />
+
+    </Grid>
+</Window>
